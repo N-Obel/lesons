@@ -1,0 +1,161 @@
+/** -------- Скидываем все стили -------- */
+@import url("reset.css");
+
+/*? -------- Основные стили -------- */
+
+/* background-color: #34d186;
+color: #5b68f6; */
+
+[class*="discount"] {
+	color: #5b68f6;
+	font-weight: 600;
+}
+
+* {
+	color: #000;
+}
+
+a {
+	color: yellowgreen;
+}
+
+li {
+	color: blue;
+}
+
+.menu-link {
+	color: brown;
+}
+
+.page {
+	margin: 20px 0;
+}
+
+.about {
+	background-color: #34d186;
+}
+
+.about-content > div {
+	color: red;
+}
+
+.about-title {
+	font-size: 24px;
+}
+
+.text p {
+	color: gray;
+}
+
+/* .discount {
+	color: #5b68f6;
+	font-weight: 600;
+} */
+
+.monday {
+	background-color: #34d186;
+}
+
+.title {
+	color: #fff;
+}
+
+.monday-text p {
+	color: red;
+}
+
+#second-p {
+	color: blue;
+}
+
+.tuesday-title {
+	color: #5b68f6;
+}
+
+.tuesday-text {
+	color: red;
+}
+
+.tuesday-text * {
+	color: burlywood;
+}
+
+.first-p {
+	color: aqua;
+}
+
+.third-p {
+	color: brown;
+}
+
+.wednesday {
+	background-color: #34d186;
+}
+
+.wednesday-text * {
+	color: violet;
+}
+
+.wednesday-text-second p {
+	color: rebeccapurple;
+}
+
+.wednesday-text-second .some-p {
+	color: yellow;
+}
+
+.thursday-title {
+	color: #5b68f6;
+}
+
+.thursday-text p {
+	color: goldenrod;
+}
+
+.thursday-text .some-p {
+	color: aquamarine;
+}
+
+.friday {
+	background-color: #34d186;
+}
+
+.friday-text p {
+	color: red;
+}
+
+.friday-text .first-p {
+	color: yellow;
+}
+
+.friday-text .second-p {
+	color: violet;
+}
+
+.weekend-title {
+	color: #5b68f6;
+}
+
+.weekend-text p {
+	color: yellowgreen;
+}
+
+.weekend-text .second-p {
+	color: orange;
+}
+
+.weekend-text .third-p {
+	color: gray;
+}
+
+.contacts-link {
+	color: #34d186;
+}
+
+#instagram-color {
+	color: violet;
+}
+
+#telegram-color {
+	color: blue;
+}
