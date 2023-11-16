@@ -1,0 +1,615 @@
+/* =================================================== */
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+/* @import url("fonts.css"); */
+
+@import url("reset.css");
+
+/* =================================================== */
+
+[class*="-container"] {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+body {
+	font-family: "Inter";
+	font-size: 18px;
+	color: #7d7d7d;
+}
+
+/* =================================================== */
+
+.header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.menu {
+	text-align: center;
+}
+
+.menu-list {
+	font-size: 0;
+}
+
+.menu-item {
+	display: inline-block;
+}
+
+.menu-item:not(:last-child) {
+	margin-right: 40px;
+}
+
+.menu-link {
+	color: #37393f;
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+.menu-link::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #40ddb6;
+}
+
+.menu-link::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #40ddb6;
+}
+
+.menu-link:hover::before,
+.menu-link:hover::after {
+	background-color: #6b77e5;
+}
+
+.menu-link:active::before,
+.menu-link:active::after {
+	background-color: red;
+}
+
+.link-up {
+	display: block;
+	margin-top: 30px;
+	width: 25px;
+	height: 25px;
+	background: url("../img/up.svg") 0 0 /100% no-repeat;
+}
+
+.link-up:hover {
+	background: green url("../img/up.svg") 0 0 /100% no-repeat;
+}
+
+/* =================================================== */
+
+.title-fz30 {
+	color: #37393f;
+	font-family: "Poppins";
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+.title-fz40 {
+	color: #37393f;
+	font-family: "Poppins";
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	text-transform: capitalize;
+}
+
+.label {
+	color: #37393f;
+	font-weight: 500;
+	line-height: 1.22;
+	text-transform: capitalize;
+	margin-bottom: 16px;
+}
+
+.label::before {
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #40ddb6;
+	margin-right: 6px;
+}
+
+.text {
+	line-height: 1.46;
+}
+
+/* =================================================== */
+
+.game {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+.game-container {
+	background-color: #e3e3e3;
+	font-size: 0;
+	min-height: 500px;
+	padding: 0;
+	box-shadow: inset -5px -5px 10px #37393f, inset 5px 5px 10px #37393f;
+}
+
+[class*="game-line"] {
+	background-color: #37393f;
+}
+
+.game-line {
+	background-color: #37393f;
+}
+
+.game-start {
+	width: 40px;
+	height: 60px;
+}
+
+.game-line-1 {
+	display: inline-block;
+	width: 660px;
+	height: 30px;
+	visibility: hidden;
+}
+
+.game-line-2 {
+	display: block;
+	height: 80px;
+	width: 40px;
+	margin: 0 auto;
+	visibility: hidden;
+}
+
+.game-line-3 {
+	height: 30px;
+	width: 80px;
+	margin-left: 580px;
+	visibility: hidden;
+}
+.game-line-4 {
+	margin-left: 580px;
+	height: 80px;
+	width: 30px;
+	visibility: hidden;
+}
+.game-line-5 {
+	height: 20px;
+	width: 440px;
+	margin-left: 580px;
+	visibility: hidden;
+}
+
+.game-line-6 {
+	height: 80px;
+	width: 20px;
+	margin-left: 1000px;
+	visibility: hidden;
+}
+.game-line-7 {
+	height: 80px;
+	width: 20px;
+	margin-left: 1000px;
+	visibility: hidden;
+}
+.game-line-8 {
+	height: 28px;
+	width: 280px;
+	margin-left: 1000px;
+	display: inline-block;
+	visibility: hidden;
+}
+.game-line-8::after {
+	content: '';
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	margin-left: 253px;
+	background: url('../img/check.svg') 0 0 no-repeat;
+}
+
+.game-start:hover ~ .game-line-1,
+.game-line-1:hover {
+	visibility: visible;
+}
+
+.game-line-1:hover ~ .game-line-2,
+.game-line-2:hover {
+	visibility: visible;
+}
+
+.game-line-2:hover ~ .game-line-3,
+.game-line-3:hover {
+	visibility: visible;
+}
+
+.game-line-3:hover ~ .game-line-4,
+.game-line-4:hover {
+	visibility: visible;
+}
+
+.game-line-4:hover ~ .game-line-5,
+.game-line-5:hover {
+	visibility: visible;
+}
+.game-line-5:hover ~ .game-line-6,
+.game-line-6:hover {
+	visibility: visible;
+}
+.game-line-6:hover ~ .game-line-7,
+.game-line-7:hover {
+	visibility: visible;
+}
+.game-line-7:hover ~ .game-line-8,
+.game-line-8:hover {
+	visibility: visible;
+}
+
+/* =================================================== */
+
+.why {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	visibility: hidden;
+}
+
+.why:target {
+	visibility: visible;
+}
+
+.why-container {
+	max-width: 722px;
+}
+
+.why-title {
+	margin-bottom: 19px;
+}
+
+.why-text:not(:last-child) {
+	margin-bottom: 42px;
+}
+
+.why-subtitle {
+	color: #6b77e5;
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 21px;
+}
+
+.benefits {
+	font-size: 0;
+	margin-bottom: 50px;
+}
+
+.benefits-image {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 29px;
+	max-width: 331px;
+}
+
+.benefits-image img {
+	max-width: 100%;
+}
+
+.benefits-content {
+	max-width: 332px;
+	display: inline-block;
+}
+
+.benefits-title {
+	color: #37393f;
+	font-family: "Poppins";
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 19px;
+}
+
+.benefits-subtitle {
+	color: #40ddb6;
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 30px;
+}
+
+.why-text p:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.benefits-item {
+	font-size: 18px;
+	line-height: 1.22;
+}
+
+.benefits-item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.benefits-item::before {
+	content: "";
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background: url("../img/check.svg") 0 0 no-repeat;
+	opacity: 0.3;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+.benefits-item:hover::before {
+	opacity: 1;
+}
+
+.questions-title {
+	margin-bottom: 19px;
+}
+
+/* =================================================== */
+
+.about {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	visibility: hidden;
+}
+
+.about:target {
+	visibility: visible;
+}
+
+.about-container {
+	max-width: 705px;
+}
+.about-header {
+	max-width: 420px;
+	margin-bottom: 10px;
+}
+
+.about-text {
+	margin-bottom: 48px;
+}
+
+.about-text p:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.about-items {
+	margin-bottom: 48px;
+}
+.about-item:not(:last-child) {
+	margin-bottom: 31px;
+}
+.item-about {
+	padding: 28px 41px;
+	border: 1px solid #e3e3e3;
+}
+.item-about-title {
+	color: #37393f;
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 12px;
+}
+
+.item-about-title::before {
+	content: "";
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	background: url("../img/check.svg") 50% no-repeat;
+	margin-right: 19px;
+	vertical-align: middle;
+}
+
+.item-about-text {
+	padding-left: 46px;
+}
+
+.about-link {
+	padding: 21px 35px;
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.22;
+	text-transform: capitalize;
+	background-color: #6b77e5;
+}
+
+.about-link:hover {
+	background-color: #4c549c;
+}
+
+/* =================================================== */
+
+.process {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	visibility: hidden;
+}
+
+.process:target {
+	visibility: visible;
+}
+
+.process-container {
+	max-width: 1250px;
+}
+.process-header {
+	text-align: center;
+	margin-bottom: 41px;
+}
+
+.process-items {
+	font-size: 0;
+	padding-top: 36px;
+}
+
+.item-process {
+	max-width: 386px;
+	display: inline-block;
+	padding: 58px 43px;
+	background-color: #f4f4f4;
+	text-align: center;
+}
+
+.item-process:not(:last-child) {
+	margin-right: 31px;
+}
+
+.item-process-image {
+	margin: -94px auto 22px auto;
+}
+
+.item-process-image img {
+	max-width: 100%;
+	border-radius: 50%;
+}
+.item-process-title {
+	color: #37393f;
+	font-family: "Poppins";
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 16px;
+}
+
+.item-process-text {
+	font-size: 18px;
+}
+
+.item-process-text p:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.item-process-text:not(:last-child) {
+	margin-bottom: 37px;
+}
+.item-process-link {
+	font-size: 18px;
+	color: #6b77e5;
+	text-align: center;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: capitalize;
+}
+
+.item-process-link:hover {
+	color: #4c549c;
+	text-decoration: underline;
+}
+
+/* =================================================== */
+
+.collection {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	visibility: hidden;
+}
+
+.collection:target {
+	visibility: visible;
+}
+
+.collection-container {
+	max-width: 1280px;
+}
+.collection-content {
+	max-width: 488px;
+	display: inline-block;
+}
+.collection-title {
+	color: #000;
+	font-family: "Cormorant Infant";
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.15;
+	text-transform: capitalize;
+}
+.collection-title::after {
+	content: "";
+	display: block;
+	width: 62%;
+	height: 3px;
+	margin-top: 12px;
+	background-color: #78473b;
+}
+.collection-items {
+	max-width: 733px;
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+}
+.item-colection {
+	max-width: 340px;
+	display: inline-block;
+}
+.item-colection-left {
+	margin-right: 55px;
+	padding-top: 105px;
+	vertical-align: top;
+}
+.item-colection-right {
+	padding-top: 70px;
+}
+.item-colection-image {
+	border: 1px solid #000;
+	margin-bottom: 34px;
+}
+.item-colection-image-left {
+	vertical-align: top;
+}
+.item-colection-image-left img,
+.item-colection-image-right img {
+	margin: 9px -10px -9px 10px;
+}
+.item-colection-content {
+	color: #000;
+	font-family: "Cormorant Infant";
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+.item-colection-descr {
+	margin-bottom: 4px;
+}
+.item-colection-label {
+	color: #000;
+	font-family: "Cormorant Infant";
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 1.13;
+	margin-bottom: 31px;
+}
+
+/* =================================================== */
+
+.footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	background-color: #e3e3e3;
+}
+
+.footer-link {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+/* =================================================== */
