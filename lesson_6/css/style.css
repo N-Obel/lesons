@@ -1,0 +1,360 @@
+/* =================================================== */
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+@import url("reset.css");
+
+/* =================================================== */
+
+[class*="-container"] {
+	max-width: 65.7%; /* 1250/1920 */
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+body {
+	font-family: "Inter";
+	font-size: 18px;
+	color: #7d7d7d;
+	font-weight: 400;
+}
+
+/* =================================================== */
+
+.header {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.menu {
+	text-align: center;
+}
+
+.menu-item {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 30px;
+}
+
+.menu-link img {
+	max-width: 100%;
+}
+
+/* =================================================== */
+
+.practice {
+	padding: 50px 0;
+}
+
+.practice-header {
+	max-width: 620px;
+	margin: 0 auto;
+	margin-bottom: 42px;
+}
+
+.sub-title {
+	text-align: center;
+	margin-bottom: 16px;
+}
+.sub-title-square {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #40ddb6;
+}
+.sub-title-text {
+	display: inline-block;
+	color: #37393f;
+	font-weight: 500;
+	line-height: 1.2;
+}
+.practice-header-title {
+	color: #37393f;
+	text-align: center;
+	font-family: "Poppins";
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.practice-items {
+	text-align: center;
+}
+
+.item-practice {
+	display: inline-block;
+	padding: 47px 31px;
+	background-color: #f4f4f4;
+	margin-right: 30px;
+}
+
+.item-practice-mid {
+	/* min-height: 828px; */
+	background-color: #6b77e5;
+	color: #fff;
+	padding: 0;
+}
+
+.item-practice-mid-box {
+	padding: 47px 31px;
+}
+.item-practice-label {
+	padding: 10px 126px;
+	display: inline-block;
+	text-align: center;
+	background: #40ddb6;
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.5; /* 30/20 */
+}
+
+.item-practice-title {
+	color: #37393f;
+	font-family: "Poppins";
+	font-weight: 700;
+	line-height: 1.1;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.item-practice-title-mid {
+	color: #fff;
+}
+
+.item-practice-divider {
+	width: 100%;
+	height: 1px;
+	background-color: #d3d3d3;
+}
+
+.item-practice-block {
+	color: #37393f;
+	font-family: "Poppins";
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.item-practice-block-mid {
+	color: #fff;
+}
+
+.item-practice-block > div {
+	margin-bottom: 23px;
+}
+
+.item-practice-price {
+	text-align: center;
+	font-size: 40px;
+}
+.item-practice-price span {
+	font-size: 20px;
+}
+.item-practice-check {
+	display: inline-block;
+	background-color: #40ddb6;
+	padding: 7px 32px;
+	color: #208068;
+	text-align: center;
+	line-height: 1.57;
+	font-weight: 400;
+	font-family: "Inter";
+}
+
+.item-practice-check-mid {
+	background-color: #fff;
+	color: #6b77e5;
+}
+
+.item-practice-list {
+	padding: 11px 7px 16px 7px;
+}
+
+.item-practice-item {
+	text-align: center;
+	line-height: 1.35;
+	margin-bottom: 18px;
+}
+
+.item-practice-item span {
+	color: #37393f;
+	font-weight: 700;
+	line-height: 1.35;
+}
+
+.item-practice-list-mid span {
+	color: #40ddb6;
+}
+
+.item-practice-box-center {
+	text-align: center;
+}
+
+.item-practice-button {
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.2;
+	text-transform: capitalize;
+	padding: 21px 42px;
+	background-color: #6b77e5;
+}
+
+.item-practice-button-mid {
+	background-color: #fff;
+	color: #6b77e5;
+}
+
+.item-practice-footer {
+	color: #6b77e5;
+	height: 47px;
+}
+
+/* =================================================== */
+
+.jewellery {
+	padding: 50px 0;
+}
+
+.jewellery-content {
+	display: inline-block;
+	max-width: 50%;
+	padding: 21px 38px 21px 0;
+}
+
+.jewellery-sub-title {
+	color: #d06b00;
+	font-size: 28px;
+	line-height: 1.2; /* 34/28 */
+	margin-bottom: 13px;
+}
+
+.jewellery-title {
+	color: #0e333d;
+	font-family: "DM Serif Text";
+	font-size: 59px;
+	line-height: 1.5;
+	margin-bottom: 25px;
+}
+
+.jewellery-text {
+	color: #474747;
+	font-family: "Inter";
+	font-size: 20px;
+	line-height: 1.8; /* 36/20 */
+}
+
+.jewellery-image {
+	display: inline;
+	max-width: 50%;
+}
+
+.jewellery-image img {
+	max-width: 100%;
+	margin-right: 22px;
+}
+
+/* =================================================== */
+
+.consulting {
+	padding: 50px 0;
+}
+
+
+.consulting-image {
+	text-align: center;
+	margin-bottom: 37px;
+}
+
+.consulting-image img {
+	max-width: 100%;
+}
+
+.consulting-header {
+	max-width: 692px;
+	margin: 0 auto;
+}
+
+.consulting-title {
+	color: #37393f;
+	font-family: "Poppins";
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 3px;
+}
+
+.consulting-text {
+	line-height: 1.46;
+	margin-bottom: 42px;
+}
+
+.consulting-sub-title {
+	color: #6b77e5;
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 12px;
+}
+
+.consulting-footer {
+	max-width: 692px;
+	margin: 0 auto;
+}
+
+.footer-consulting-image {
+	display: inline-block;
+	max-width: 331px;
+}
+
+.footer-consulting-image img {
+	max-width: 100%;
+}
+
+.footer-consulting-body {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 332px;
+	padding-left: 29px;
+}
+
+.footer-consulting-title {
+	color: #37393f;
+	font-family: "Poppins";
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 15px;
+}
+
+.footer-consulting-sub-title {
+	color: #40ddb6;
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 21px;
+}
+
+.footer-consulting-item {
+	line-height: 1.2;
+	margin-bottom: 32px;
+}
+
+/* =================================================== */
+
+.footer {
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.footer-link {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+/* =================================================== */
