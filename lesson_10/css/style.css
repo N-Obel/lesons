@@ -1,0 +1,50 @@
+/* =================================================== */
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+@import url("reset.css");
+
+/* =================================================== */
+
+[class*="-container"] {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+body {
+	font-family: "Inter";
+	font-size: 18px;
+	color: #37393F;
+	background-color: #e3e3e3;
+}
+
+/* =================================================== */
+
+.header-container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.page-container p:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+/* =================================================== */
+
+.footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	background-color: #e3e3e3;
+}
+
+.footer-link {
+	display: inline-block;
+	margin-right: 30px;
+}
