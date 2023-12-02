@@ -1,0 +1,552 @@
+/* =================================================== */
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:regular,700,700italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+/* @import url("fonts.css"); */
+
+@import url("reset.css");
+
+/* =================================================== */
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+body {
+	font-family: "Inter";
+	font-size: 18px;
+	color: #2a2f2f;
+	background: #fff9f4;
+}
+
+/* ==================== HEADER ====================== */
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+	background-color: #fff;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	min-height: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.header__logo {
+	color: #000;
+	font-family: "Merriweather";
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 700;
+	line-height: 1.27;
+	position: relative;
+	z-index: 5;
+}
+
+@media (min-width: 400px) {
+	.header__logo {
+		flex: 0 0 184px;
+		font-size: 30px;
+	}
+}
+
+.header__menu {
+	display: flex;
+}
+
+.menu__list {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	column-gap: 36px;
+	row-gap: 15px;
+}
+
+.menu__item {
+	position: relative;
+}
+.menu__item--home .menu__link {
+	color: #d58417;
+	font-family: "Merriweather";
+	font-size: 20px;
+	font-weight: 700;
+	text-decoration-line: underline;
+}
+
+.menu__item--home .menu__link::after {
+	display: none;
+}
+
+.menu__link {
+	color: #000;
+	font-family: "Merriweather";
+	font-size: 20px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	transition: all 0.3s;
+}
+.menu__link::after {
+	content: "";
+	width: 16px;
+	height: 16px;
+	flex: 0 0 16px;
+	background: url("../img/header/res.svg") 0 0 no-repeat;
+	transition: all 0.3s;
+}
+
+.menu__item:hover .menu__link {
+	color: #ff9d1d;
+	text-decoration: underline;
+}
+.menu__item:hover .menu__link::after {
+	transform: rotate(-180deg);
+}
+
+.menu__item:hover .sub-menu {
+	visibility: visible;
+	opacity: 1;
+	pointer-events: all;
+	transform: translate(0px, 0px);
+}
+
+.sub-menu {
+	transition: all 0.5s;
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding-top: 5px;
+	transform: translate(-15%, 0);
+}
+
+.sub-menu__list {
+	width: 150px;
+	border-radius: 15px;
+	padding: 20px;
+	background-color: #77608d;
+	box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sub-menu__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.sub-menu__link {
+	font-size: 18px;
+	color: #fff;
+	font-family: "Merriweather";
+	font-weight: 400;
+}
+.sub-menu__link:hover {
+	text-decoration: underline;
+}
+
+.actions-header {
+	flex: 0 0 87px;
+	display: flex;
+	gap: 25px;
+}
+.actions-header__item {
+	width: 30px;
+	height: 30px;
+	flex: 0 0 30px;
+	position: relative;
+	z-index: 5;
+}
+
+.actions-header__item svg {
+	fill: transparent;
+	/* transition: fill 0.3s; */
+}
+.actions-header__item svg path {
+	stroke: #000;
+	transition: fill 0.4s;
+}
+.actions-header__item:hover svg {
+	fill: #ff9d1d;
+}
+.actions-header__item:hover path {
+	stroke: #ff9d1d;
+}
+.actions-header__item img {
+	max-width: 100%;
+	transition: all 0.2s;
+}
+.actions-header__item:hover img {
+	transform: scale(1.05);
+}
+
+.actions-header__item span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 12px;
+	height: 12px;
+	background-color: #ff3333;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 9px;
+	text-align: center;
+	line-height: 12px;
+}
+
+@media (max-width: 991.98px) {
+	.header__container {
+		min-height: 70px;
+	}
+	.header__menu {
+		order: 3;
+	}
+	.header__actions {
+		order: 2;
+		flex: 1 1 100%;
+		justify-content: flex-end;
+	}
+	.menu__body {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(227, 227, 227, 0.8);
+		padding: 120px 30px 50px 30px;
+		transition: all 0.4s;
+	}
+	.menu__body::before {
+		content: "";
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		right: -100%;
+		width: 100%;
+		min-height: 70px;
+		background-color: #fefbf7;
+		transition: all 0.4s;
+	}
+	.menu__list {
+		flex-direction: column;
+		row-gap: 25px;
+	}
+	.menu__link,
+	.menu__item--home .menu__link {
+		font-size: 28px;
+		text-align: center;
+	}
+	.menu__link::after {
+		display: none;
+	}
+	.menu__link {
+		display: block;
+	}
+	.sub-menu {
+		position: relative;
+		visibility: visible;
+		opacity: 1;
+		padding-top: 15px;
+		transform: translate(0px, 0px);
+	}
+	.sub-menu__list {
+		width: 100%;
+	}
+	.sub-menu__link {
+		font-size: 22px;
+	}
+
+	.menu-open .menu__body {
+		right: 0;
+	}
+	.menu-open .menu__body::before {
+		right: 0;
+	}
+
+	/* burger */
+	.icon-menu {
+		display: block;
+		width: 30px;
+		flex: 0 0 30px;
+		height: 18px;
+		position: relative;
+		z-index: 5;
+	}
+	.icon-menu span,
+	.icon-menu::before,
+	.icon-menu::after {
+		content: "";
+		height: 2px;
+		width: 100%;
+		background-color: #000;
+		position: absolute;
+		left: 0;
+		transition: all 0.4s;
+	}
+	.icon-menu::before {
+		top: 0;
+	}
+	.icon-menu::after {
+		bottom: 0;
+	}
+	.icon-menu span {
+		transform: translate(0, -50%);
+	}
+	.menu-open .icon-menu span {
+		width: 0;
+	}
+	.menu-open .icon-menu::before {
+		transform: rotate(-45deg);
+		top: 50%;
+		margin-top: -1px;
+	}
+	.menu-open .icon-menu::after {
+		transform: rotate(45deg);
+		top: 50%;
+		margin-top: -1px;
+	}
+}
+
+/** ============================= MAIN =========================== */
+
+.main {
+	font-family: "Cormorant Infant";
+	background-color: #502203;
+	color: #fff;
+	position: relative;
+}
+
+.main__container {
+	padding-top: 200px;
+	padding-bottom: 60px;
+	position: relative;
+	z-index: 10;
+	display: flex;
+}
+
+.main__content {
+	padding-top: 57px;
+	padding-right: 30px;
+}
+
+.main__title {
+	font-family: "Cormorant Infant";
+	font-size: 78px;
+	font-weight: 700;
+	line-height: 129%; /* 100.62px */
+}
+.main__title:not(:last-child) {
+	margin-bottom: 9px;
+}
+
+.main__link {
+	font-size: 24px;
+	font-weight: 600;
+	padding: 15px 25px;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	position: relative;
+}
+.main__link::after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: -8px;
+	width: 100%;
+	height: 100%;
+	padding: 15px 25px;
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, 0.06);
+	transition: all 0.4s;
+}
+
+.main__link:hover::after {
+	top: 0;
+	left: 0;
+}
+
+.main__image {
+	flex: 0 0 36.75%;
+	border-radius: 215px;
+	border: 1px solid #fff;
+	padding: 20px;
+}
+
+.main__image img {
+	border-radius: 215px;
+	width: 100%;
+}
+.description {
+	padding-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+.description__text {
+	/* padding-top: 76px; */
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 148%;
+}
+.description__item {
+	align-self: flex-end;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 120%; /* 38.4px */
+	position: relative;
+	z-index: 20;
+	padding-left: 10px;
+}
+
+.description__item::before {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 80%;
+	top: 50%;
+	transform: translate(0, -50%);
+	left: 0;
+	background-color: #fff;
+}
+
+.main__vector--left {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.main__vector--right {
+	position: absolute;
+	bottom: 110px;
+	right: 0;
+	z-index: 2;
+}
+
+@media (max-width: 1250px) {
+	.main__deco--left,
+	.main__deco--right {
+		display: none;
+	}
+	.main__container {
+		padding-top: 150px;
+	}
+	.main__title {
+		font-size: 70px;
+	}
+}
+
+@media (min-width: 1250px) {
+	.main__deco--left {
+		position: absolute;
+		width: 239px;
+		height: 215px;
+		bottom: 4px;
+		left: 3%;
+		border-radius: 195px 195px 0px 0px;
+		border: 1px solid #fff;
+	}
+	.main__deco--left img {
+		transform: translate(8px, 5px);
+		border-radius: 195px 195px 0px 0px;
+		width: 100%;
+	}
+	.main__deco--right {
+		position: absolute;
+		border-radius: 215px;
+		bottom: 7%;
+		right: -5%;
+		width: 237px;
+		height: 337px;
+		border-radius: 215px;
+		padding: 10px;
+		border: 1px solid #fff;
+		z-index: 5;
+	}
+	.main__deco--right img {
+		transform: translate(0, 5px);
+		border-radius: 195px;
+		max-width: 100%;
+		aspect-ratio: 237 / 336;
+		object-fit: cover;
+	}
+	.description__item {
+		background-color: rgb(79, 33, 3, 0.55);
+	}
+}
+
+@media (max-width: 991.98px) {
+	.main__container {
+		padding-top: 120px;
+		flex-direction: column;
+		row-gap: 30px;
+	}
+	.main__content {
+		padding: 0;
+		text-align: center;
+	}
+	.main__image {
+		align-self: center;
+	}
+	.description {
+		padding: 0;
+		row-gap: 15px;
+	}
+	.description__item {
+	align-self: flex-start;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.main__container {
+		padding-top: 100px;
+	}
+	.main__title {
+		font-size: 48px;
+	}
+}
+
+@media (max-width: 549.98px) {
+	.main__vector--left,
+	.main__vector--right {
+		display: none;
+	}
+}
+
+/** ============================= FOOTER ========================= */
+
+.footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #fff;
+}
+.footer__container {
+	text-align: center;
+}
+.footer__link {
+	color: #000;
+	font-family: "Merriweather";
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 126%;
+}
+.footer__link:hover {
+	text-decoration: underline;
+}
