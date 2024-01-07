@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson-22</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header__top top-header">
+			<div class="top-header__container">
+				<adress class="top-header__contacts">
+					<a href="https://www.google.com.ua/maps?hl=ru" target="_blank" class="top-header__adress"><span>24 Olive Street, Prairie, NY 53590</span></a>
+					<a href="mailto:whitecollar@gmail.com" class="top-header__email"><span>whitecollar@gmail.com</span></a>
+				</adress>
+				<div class="top-header__socials">
+					<div class="top-header__time">Mon - Fri: 8:00 am - 5:00 pm</div>
+					<div class="top-header__links">
+						<a href="#" class="top-header__link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+								<path d="M12.1048 2.18412C13.0482 2.18683 13.9521 2.54891 14.6192 3.19127C15.2862 3.83362 15.6622 4.70407 15.665 5.6125V12.4685C15.6622 13.377 15.2862 14.2474 14.6192 14.8898C13.9521 15.5321 13.0482 15.8942 12.1048 15.8969H4.98508C4.04172 15.8942 3.13779 15.5321 2.47073 14.8898C1.80366 14.2474 1.42766 13.377 1.42484 12.4685V5.6125C1.42766 4.70407 1.80366 3.83362 2.47073 3.19127C3.13779 2.54891 4.04172 2.18683 4.98508 2.18412H12.1048ZM12.1048 0.812988H4.98508C2.24377 0.812988 0.000976562 2.97271 0.000976562 5.6125V12.4685C0.000976562 15.1083 2.24377 17.268 4.98508 17.268H12.1048C14.8461 17.268 17.0889 15.1083 17.0889 12.4685V5.6125C17.0889 2.97271 14.8461 0.812988 12.1048 0.812988Z" fill="white" />
+								<path d="M13.1733 5.61255C12.962 5.61255 12.7556 5.55223 12.5799 5.43922C12.4043 5.32622 12.2674 5.16559 12.1866 4.97767C12.1057 4.78975 12.0846 4.58296 12.1258 4.38347C12.167 4.18397 12.2687 4.00072 12.4181 3.85689C12.5674 3.71306 12.7577 3.61511 12.9649 3.57543C13.1721 3.53574 13.3868 3.55611 13.582 3.63395C13.7771 3.71179 13.9439 3.84361 14.0613 4.01273C14.1786 4.18186 14.2413 4.3807 14.2413 4.5841C14.2416 4.71924 14.2142 4.85311 14.1606 4.97802C14.107 5.10292 14.0284 5.21641 13.9291 5.31197C13.8299 5.40753 13.712 5.48327 13.5823 5.53485C13.4526 5.58643 13.3136 5.61284 13.1733 5.61255ZM8.54542 6.29793C9.10873 6.29793 9.65938 6.45878 10.1277 6.76014C10.5961 7.06151 10.9612 7.48985 11.1767 7.991C11.3923 8.49215 11.4487 9.0436 11.3388 9.57562C11.2289 10.1076 10.9577 10.5963 10.5593 10.9799C10.161 11.3635 9.65354 11.6247 9.10106 11.7305C8.54858 11.8363 7.97592 11.782 7.45549 11.5744C6.93507 11.3668 6.49026 11.0153 6.1773 10.5643C5.86435 10.1133 5.69731 9.583 5.69731 9.04056C5.69811 8.31341 5.99844 7.61626 6.53239 7.10208C7.06634 6.58791 7.7903 6.29871 8.54542 6.29793ZM8.54542 4.9268C7.7005 4.9268 6.87456 5.16806 6.17204 5.62009C5.46951 6.07212 4.92196 6.7146 4.59862 7.46629C4.27529 8.21798 4.19069 9.04512 4.35552 9.84311C4.52036 10.6411 4.92723 11.3741 5.52467 11.9494C6.12212 12.5247 6.88332 12.9165 7.712 13.0753C8.54068 13.234 9.39963 13.1525 10.1802 12.8412C10.9608 12.5298 11.628 12.0025 12.0974 11.326C12.5669 10.6495 12.8174 9.85418 12.8174 9.04056C12.8174 7.94952 12.3673 6.90317 11.5662 6.13169C10.765 5.36021 9.67842 4.9268 8.54542 4.9268Z" fill="white" />
+							</svg>
+						</a>
+						<a href="#" class="top-header__link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M17.1768 9.08983C17.1768 4.54632 13.3511 0.862305 8.63283 0.862305C3.91458 0.862305 0.0888672 4.54632 0.0888672 9.08983C0.0888672 13.1962 3.21275 16.6 7.29784 17.2178V11.4688H5.1279V9.08983H7.29784V7.2772C7.29784 5.21555 8.57371 4.07581 10.5251 4.07581C11.46 4.07581 12.4379 4.23669 12.4379 4.23669V6.26162H11.36C10.2993 6.26162 9.96745 6.89558 9.96745 7.54717V9.08983H12.3369L11.9585 11.4688H9.96783V17.2185C14.0529 16.6011 17.1768 13.1973 17.1768 9.08983Z" fill="white" />
+							</svg>
+						</a>
+						<a href="#" class="top-header__link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" fill="none">
+								<path d="M18.4853 2.4523C17.7985 2.75071 17.0718 2.94731 16.3283 3.03588C17.1097 2.57831 17.6973 1.85138 17.981 0.991431C17.2422 1.42343 16.4353 1.72654 15.5948 1.88778C15.2409 1.51686 14.8152 1.22178 14.3437 1.02047C13.8722 0.819173 13.3646 0.715856 12.852 0.716803C10.7762 0.716803 9.09643 2.3722 9.09643 4.41283C9.09496 4.69667 9.12748 4.97967 9.19331 5.25578C7.70486 5.18601 6.24737 4.8063 4.91407 4.14097C3.58078 3.47564 2.40104 2.53932 1.45034 1.39193C1.11681 1.9542 0.940425 2.59573 0.939612 3.24948C0.939612 4.53107 1.60825 5.66391 2.61789 6.32759C2.01971 6.3134 1.43379 6.15508 0.909861 5.86607V5.91184C0.909861 7.70455 2.20671 9.19592 3.92313 9.53539C3.60036 9.62144 3.26775 9.66503 2.93371 9.66508C2.69669 9.66549 2.4602 9.6425 2.22769 9.59642C2.70486 11.0649 4.09363 12.1329 5.73873 12.1634C4.40197 13.1936 2.76078 13.7504 1.07311 13.7463C0.773545 13.7459 0.474258 13.7281 0.176758 13.6929C1.89363 14.7893 3.88936 15.3691 5.92639 15.3636C12.8439 15.3636 16.6231 9.72992 16.6231 4.84384C16.6231 4.68364 16.6189 4.52344 16.6113 4.36706C17.3448 3.84529 17.9794 3.19688 18.4853 2.4523Z" fill="white" />
+							</svg>
+						</a>
+						<a href="#" class="top-header__link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+								<path d="M9.16687 0.36084C4.37266 0.36084 0.485352 4.24641 0.485352 9.03849C0.485352 12.5909 2.62473 15.6436 5.68264 16.9878C5.65938 16.3835 5.67876 15.6552 5.83379 14.9966C6.00044 14.2916 6.94999 10.2665 6.94999 10.2665C6.94999 10.2665 6.67094 9.71255 6.67094 8.89515C6.67094 7.609 7.41507 6.64826 8.34523 6.64826C9.13587 6.64826 9.51568 7.24097 9.51568 7.94991C9.51568 8.74407 9.00797 9.9295 8.7483 11.0297C8.53126 11.9517 9.20951 12.6994 10.1203 12.6994C11.7636 12.6994 12.872 10.5881 12.872 8.0855C12.872 6.18339 11.5892 4.76165 9.25989 4.76165C6.6283 4.76165 4.98501 6.72574 4.98501 8.9184C4.98501 9.67381 5.2098 10.2084 5.55862 10.6191C5.71752 10.8089 5.74077 10.8864 5.68264 11.1033C5.64001 11.2621 5.54699 11.6457 5.50436 11.8006C5.44622 12.0214 5.26794 12.0989 5.07028 12.0176C3.85719 11.5217 3.29134 10.1968 3.29134 8.70145C3.29134 6.23762 5.37258 3.2818 9.49631 3.2818C12.81 3.2818 14.992 5.67977 14.992 8.25208C14.992 11.6573 13.0968 14.1986 10.3063 14.1986C9.36841 14.1986 8.48863 13.6911 8.18633 13.1178C8.18633 13.1178 7.68249 15.1167 7.57397 15.5041C7.39181 16.1743 7.03137 16.8406 6.70194 17.3636C7.50106 17.5992 8.32983 17.7193 9.163 17.72C13.9572 17.72 17.8445 13.8344 17.8445 9.04236C17.8445 4.25029 13.9611 0.36084 9.16687 0.36084Z" fill="white" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo">
+					<img src="img/header/logo.svg" alt="Logo">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">About Us</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Pages</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Services</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Blog</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Contact Us</a>
+							</li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+				<a href="#" class="header__button button">Get Consulting</a>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__content block-title">
+					<div class="hero__label block-title__label block-title__label--white">Welcome to Whitecollar Solution</div>
+					<h1 class="hero__title block-title__title block-title__title--white">The Best Value for <span>Business</span> and Corporation</h1>
+					<div class="hero__text block-title__text block-title__text">
+						<p>
+							Collaboratively administrate empowered markets plug and play networks dynamically procrastinated
+						</p>
+					</div>
+					<div class="hero__actions actions-hero">
+						<a href="#" class="actions-hero__button button button--green">Get Consulting</a>
+						<a href="#" class="actions-hero__video">Watch Videos</a>
+					</div>
+				</div>
+				<img class="hero__image" src="img/hero/main_bg.jpg" alt="Image">
+			</section>
+			<section class="page__about about">
+				<div class="about__container">
+					<div class="about__content content-about">
+						<div class="content-about__image">
+							<img src="img/about/about.jpg" alt="Image">
+						</div>
+						<div class="content-about__body">
+							<h4 class="content-about__title">We’re Ready To Grow Your Business With Us</h4>
+							<div class="content-about__text">
+								<p>
+									Leverage agile frameworks to provide a robust synopsis for high level overviews. thinking to further the overall value proposition.
+								</p>
+							</div>
+							<a href="#" class="content-about__link">Get in Touch</a>
+						</div>
+					</div>
+					<div class="about__body body-about">
+						<div class="body-about__content block-title">
+							<div class="body-about__label block-title__label">Welcome Whitecollar</div>
+							<h2 class="body-about__title block-title__title">We Care About Your <br> Business Plan.</h2>
+							<div class="body-about__text block-title__text">
+								<p>
+									Leverage agile frameworks to provide a robust synopsis for high level overviews.Iterative approaches to corporate strategy foster collaborative thinking to further the overal.
+								</p>
+								<p>
+									Leverage agile frameworks to provide a robust synopsis for high level overviews.Iterative approaches to corporate strategy
+								</p>
+							</div>
+						</div>
+						<ul class="body-about__list list-about">
+							<li class="list-about__item">Components of a Business Strategy</li>
+							<li class="list-about__item">Business Consulting</li>
+						</ul>
+						<div class="body-about__items">
+							<div class="body-about__item item-about">
+								<div class="item-about__image">
+									<img src="img/about/about01.svg" alt="Image">
+								</div>
+								<div class="item-about__body">
+									<div class="item-about__label">Experience</div>
+									<div class="item-about__descr">Leverage frameworks toprovidee werment.</div>
+								</div>
+							</div>
+							<div class="body-about__item item-about">
+								<div class="item-about__image">
+									<img src="img/about/about02.svg" alt="Image">
+								</div>
+								<div class="item-about__body">
+									<div class="item-about__label">Awards Winner</div>
+									<div class="item-about__descr">Leverage frameworks toprovidee werment.</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="body-about__button button">More About Us</a>
+					</div>
+				</div>
+			</section>
+			<div class="page__partners partners">
+				<div class="partners__container">
+					<div class="partners__items">
+						<div class="partners__item">
+							<img src="img/partner/partner01.svg" alt="Image">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner/partner02.svg" alt="Image">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner/partner03.svg" alt="Image">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner/partner04.svg" alt="Image">
+						</div>
+						<div class="partners__item">
+							<img src="img/partner/partner05.svg" alt="Image">
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="page__services services">
+				<div class="services__container">
+					<div class="services__header block-title">
+						<div class="services__label block-title__label">We Are Expertise In</div>
+						<h2 class="services__title block-title__title">We Provide Professional <br> Business Solutions.</h2>
+					</div>
+					<div class="services__items">
+						<article class="services__item item-services">
+							<div class="item-services__content">
+								<h5 class="item-services__title">Financial Consultancy</h5>
+								<a href="#" class="item-services__link">Read More</a>
+							</div>
+							<div class="item-services__icon">
+								<img src="img/skills/skill01.svg" alt="Image">
+							</div>
+						</article>
+						<article class="services__item item-services">
+							<div class="item-services__content">
+								<h5 class="item-services__title">Business Management</h5>
+								<a href="#" class="item-services__link">Read More</a>
+							</div>
+							<div class="item-services__icon">
+								<img src="img/skills/skill02.svg" alt="Image">
+							</div>
+						</article>
+						<article class="services__item item-services">
+							<div class="item-services__content">
+								<h5 class="item-services__title">Consultants & program</h5>
+								<a href="#" class="item-services__link">Read More</a>
+							</div>
+							<div class="item-services__icon">
+								<img src="img/skills/skill03.svg" alt="Image">
+							</div>
+						</article>
+						<article class="services__item item-services">
+							<div class="item-services__content">
+								<h5 class="item-services__title">Company Management</h5>
+								<a href="#" class="item-services__link">Read More</a>
+							</div>
+							<div class="item-services__icon">
+								<img src="img/skills/skill04.svg" alt="Image">
+							</div>
+						</article>
+						<article class="services__item item-services">
+							<div class="item-services__content">
+								<h5 class="item-services__title">Financial & Insurance jobs</h5>
+								<a href="#" class="item-services__link">Read More</a>
+							</div>
+							<div class="item-services__icon">
+								<img src="img/skills/skill05.svg" alt="Image">
+							</div>
+						</article>
+						<a href="#" class="services__item item-services item-services--link">More Services</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__choose choose">
+				<div class="choose__content">
+					<div class="choose__container">
+						<div class="choose__body">
+							<div class="choose__header block-title">
+								<div class="choose__label block-title__label block-title__label--white">Why Choose Me</div>
+								<h4 class="choose__title block-title__title block-title__title--white">We Provide Solutions To <br> Grow Your Business</h4>
+								<div class="choose__text block-title__text">
+									<p>
+										Leverage agile frameworks to provide a robust synopsis for high level overviews. thinking to further the overall proposition.
+									</p>
+								</div>
+							</div>
+							<div class="choose__items">
+								<div class="choose__item item-choose">
+									<div class="item-choose__image">
+										<img src="img/choose/item-choose01.svg" alt="Image">
+									</div>
+									<div class="item-choose__content">
+										<div class="item-choose__descr">Clients</div>
+										<div class="item-choose__value">Quick Response</div>
+									</div>
+								</div>
+								<div class="choose__item item-choose">
+									<div class="item-choose__image">
+										<img src="img/choose/item-choose02.svg" alt="Image">
+									</div>
+									<div class="item-choose__content">
+										<div class="item-choose__descr">Project</div>
+										<div class="item-choose__value">Finished Jobs</div>
+									</div>
+								</div>
+							</div>
+							<div class="choose__lists">
+								<ul class="choose__list list-choose">
+									<li class="list-choose__item">
+										<p>2,800+</p>
+										<span>Active clients</span>
+									</li>
+									<li class="list-choose__item">
+										<p>1,670+</p>
+										<div class="stars">
+											<p>5</p>
+											<span>stars</span>
+										</div>
+										<span>reviews</span>
+									</li>
+								</ul>
+								<ul class="choose__list list-choose">
+									<li class="list-choose__item">
+										<p>106+</p>
+									</li>
+									<li class="list-choose__item">
+										<a href="#" class="list-choose__link">Get in Touch</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="choose__image">
+					<img src="img/choose/choose_image.jpg" alt="Image">
+				</div>
+			</section>
+			<section class="page__project project">
+				<div class="project__container">
+					<div class="project__header">
+						<div class="project__content block-title">
+							<div class="project__label block-title__label">Our Project</div>
+							<h2 class="project__title block-title__title">You can check our projects as inspirations.</h2>
+						</div>
+						<div class="project__actions">
+							<a href="#" class="project__button button button--green">More Work</a>
+						</div>
+					</div>
+				</div>
+				<div class="project__images">
+					<a href="#" class="project__image">
+						<img src="img/project/image01.jpg" alt="Image">
+					</a>
+					<a href="#" class="project__image">
+						<img src="img/project/image02.jpg" alt="Image">
+					</a>
+					<a href="#" class="project__image">
+						<img src="img/project/image03.jpg" alt="Image">
+					</a>
+					<a href="#" class="project__image">
+						<img src="img/project/image04.jpg" alt="Image">
+					</a>
+				</div>
+			</section>
+			<section class="page__testimonials testimonials">
+				<div class="testimonials__container">
+					<div class="testimonials__content block-title">
+						<div class="testimonials__label block-title__label">Testimonial</div>
+						<h2 class="testimonials__title block-title__title">What Our Client Say’s</h2>
+						<div class="testimonials__text block-title__text">
+							<p>
+								Leverage agile frameworks to provide a robust synopsis for high level overviews.Iterative
+							</p>
+						</div>
+					</div>
+					<div class="testimonials__items">
+						<div class="testimonials__item item-testimonials">
+							<div class="item-testimonials__header header-item">
+								<div class="header-item__image">
+									<img src="img/testimonials/image01.png" alt="Image">
+								</div>
+								<div class="header-item__body">
+									<div class="header-item__title">Nattasha Kelvin</div>
+									<div class="header-item__subtitle">Designer</div>
+									<div class="header-item__raiting">
+										<svg xmlns="http://www.w3.org/2000/svg" width="122" height="27" viewBox="0 0 122 27" fill="none">
+											<path d="M9.19467 3.92789C9.46221 3.10449 10.6271 3.10449 10.8946 3.92789L12.6532 9.34008C12.7728 9.70832 13.116 9.95763 13.5032 9.95763H19.1939C20.0597 9.95763 20.4196 11.0655 19.7192 11.5744L15.1153 14.9193C14.8021 15.1469 14.671 15.5503 14.7906 15.9185L16.5492 21.3307C16.8167 22.1541 15.8743 22.8388 15.1739 22.33L10.57 18.985C10.2567 18.7575 9.83258 18.7575 9.51934 18.985L4.91545 22.33C4.21502 22.8388 3.27261 22.1541 3.54015 21.3307L5.29867 15.9185C5.41832 15.5503 5.28725 15.1469 4.97401 14.9193L0.370122 11.5744C-0.330307 11.0655 0.0296666 9.95763 0.895444 9.95763H6.58616C6.97334 9.95763 7.3165 9.70832 7.43614 9.34008L9.19467 3.92789Z" fill="#FFA722" />
+											<path d="M58.7934 4.03393C59.0551 3.19857 60.2373 3.19857 60.4991 4.03393L62.1587 9.33113C62.2755 9.70392 62.6209 9.95765 63.0116 9.95765H68.4497C69.3076 9.95765 69.6727 11.0489 68.9875 11.5652L64.5327 14.9216C64.2308 15.1491 64.1047 15.5419 64.2177 15.9026L65.906 21.291C66.1657 22.1202 65.2093 22.7949 64.5153 22.272L60.184 19.0086C59.8656 18.7687 59.4268 18.7687 59.1084 19.0086L54.7771 22.272C54.0831 22.7949 53.1267 22.1202 53.3864 21.291L55.0747 15.9026C55.1877 15.5419 55.0616 15.1491 54.7597 14.9216L50.3049 11.5652C49.6197 11.0489 49.9848 9.95765 50.8427 9.95765H56.2808C56.6715 9.95765 57.0169 9.70392 57.1337 9.33113L58.7934 4.03393Z" fill="#FFA722" />
+											<path d="M107.591 9.6491L109.249 4.54797L110.906 9.6491C111.16 10.4294 111.887 10.9576 112.707 10.9576H118.071L113.732 14.1103C113.068 14.5925 112.79 15.4473 113.044 16.2276L114.701 21.3287L110.362 18.176C109.698 17.6938 108.799 17.6938 108.136 18.176L103.796 21.3287L105.454 16.2276C105.707 15.4473 105.43 14.5925 104.766 14.1103L100.427 10.9576H105.79C106.611 10.9576 107.338 10.4294 107.591 9.6491Z" stroke="#FFA722" stroke-width="2" />
+											<path d="M34.2191 3.92789C34.4866 3.10449 35.6515 3.10449 35.9191 3.92789L37.6776 9.34008C37.7972 9.70832 38.1404 9.95763 38.5276 9.95763H44.2183C45.0841 9.95763 45.444 11.0655 44.7436 11.5744L40.1397 14.9193C39.8265 15.1469 39.6954 15.5503 39.8151 15.9185L41.5736 21.3307C41.8411 22.1541 40.8987 22.8388 40.1983 22.33L35.5944 18.985C35.2812 18.7575 34.857 18.7575 34.5438 18.985L29.9399 22.33C29.2394 22.8388 28.297 22.1541 28.5646 21.3307L30.3231 15.9185C30.4427 15.5503 30.3117 15.1469 29.9984 14.9193L25.3945 11.5744C24.6941 11.0655 25.0541 9.95763 25.9199 9.95763H31.6106C31.9978 9.95763 32.3409 9.70832 32.4606 9.34008L34.2191 3.92789Z" fill="#FFA722" />
+											<path d="M83.3744 3.92789C83.6419 3.10449 84.8068 3.10449 85.0743 3.92789L86.8329 9.34008C86.9525 9.70832 87.2957 9.95763 87.6828 9.95763H93.3736C94.2393 9.95763 94.5993 11.0655 93.8989 11.5744L89.295 14.9193C88.9818 15.1469 88.8507 15.5503 88.9703 15.9185L90.7289 21.3307C90.9964 22.1541 90.054 22.8388 89.3535 22.33L84.7497 18.985C84.4364 18.7575 84.0123 18.7575 83.699 18.985L79.0951 22.33C78.3947 22.8388 77.4523 22.1541 77.7198 21.3307L79.4784 15.9185C79.598 15.5503 79.4669 15.1469 79.1537 14.9193L74.5498 11.5744C73.8494 11.0655 74.2094 9.95763 75.0751 9.95763H80.7658C81.153 9.95763 81.4962 9.70832 81.6158 9.34008L83.3744 3.92789Z" fill="#FFA722" />
+											<mask id="mask0_1_3683" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="99" y="3" width="21" height="20">
+												<path d="M108.289 3.90599C108.588 2.98468 109.892 2.98468 110.191 3.90599L111.826 8.9398C111.96 9.35182 112.344 9.63078 112.778 9.63078H118.07C119.039 9.63078 119.442 10.8704 118.658 11.4398L114.376 14.5509C114.026 14.8055 113.879 15.2569 114.013 15.6689L115.648 20.7027C115.948 21.624 114.893 22.3901 114.11 21.8207L109.828 18.7097C109.477 18.455 109.003 18.455 108.652 18.7097L104.37 21.8207C103.586 22.3901 102.532 21.624 102.831 20.7027L104.467 15.6689C104.601 15.2569 104.454 14.8055 104.103 14.5509L99.8215 11.4398C99.0378 10.8704 99.4405 9.63078 100.409 9.63078H105.702C106.135 9.63078 106.519 9.35182 106.653 8.9398L108.289 3.90599Z" fill="#FFA722" />
+											</mask>
+											<g mask="url(#mask0_1_3683)">
+												<rect x="99.1738" y="1.47009" width="9.82044" height="22.587" rx="1" fill="#FFA722" />
+											</g>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="item-testimonials__text">
+								<p>
+									“ dd an excerpt from your personal biography, or simply let the world know who you are and what you have to offer. Connect with your site visitor’s on a personal level and make sure that your site.
+								</p>
+							</div>
+						</div>
+						<div class="testimonials__item item-testimonials item-testimonials--short">
+							<div class="item-testimonials__header header-item">
+								<div class="header-item__image">
+									<img src="img/testimonials/image02.png" alt="Image">
+								</div>
+								<div class="header-item__body">
+									<div class="header-item__title">Cincinnati</div>
+									<div class="header-item__subtitle">Designer</div>
+									<div class="header-item__raiting">
+										<svg xmlns="http://www.w3.org/2000/svg" width="122" height="27" viewBox="0 0 122 27" fill="none">
+											<path d="M9.19467 3.92789C9.46221 3.10449 10.6271 3.10449 10.8946 3.92789L12.6532 9.34008C12.7728 9.70832 13.116 9.95763 13.5032 9.95763H19.1939C20.0597 9.95763 20.4196 11.0655 19.7192 11.5744L15.1153 14.9193C14.8021 15.1469 14.671 15.5503 14.7906 15.9185L16.5492 21.3307C16.8167 22.1541 15.8743 22.8388 15.1739 22.33L10.57 18.985C10.2567 18.7575 9.83258 18.7575 9.51934 18.985L4.91545 22.33C4.21502 22.8388 3.27261 22.1541 3.54015 21.3307L5.29867 15.9185C5.41832 15.5503 5.28725 15.1469 4.97401 14.9193L0.370122 11.5744C-0.330307 11.0655 0.0296666 9.95763 0.895444 9.95763H6.58616C6.97334 9.95763 7.3165 9.70832 7.43614 9.34008L9.19467 3.92789Z" fill="#FFA722" />
+											<path d="M58.7934 4.03393C59.0551 3.19857 60.2373 3.19857 60.4991 4.03393L62.1587 9.33113C62.2755 9.70392 62.6209 9.95765 63.0116 9.95765H68.4497C69.3076 9.95765 69.6727 11.0489 68.9875 11.5652L64.5327 14.9216C64.2308 15.1491 64.1047 15.5419 64.2177 15.9026L65.906 21.291C66.1657 22.1202 65.2093 22.7949 64.5153 22.272L60.184 19.0086C59.8656 18.7687 59.4268 18.7687 59.1084 19.0086L54.7771 22.272C54.0831 22.7949 53.1267 22.1202 53.3864 21.291L55.0747 15.9026C55.1877 15.5419 55.0616 15.1491 54.7597 14.9216L50.3049 11.5652C49.6197 11.0489 49.9848 9.95765 50.8427 9.95765H56.2808C56.6715 9.95765 57.0169 9.70392 57.1337 9.33113L58.7934 4.03393Z" fill="#FFA722" />
+											<path d="M107.591 9.6491L109.249 4.54797L110.906 9.6491C111.16 10.4294 111.887 10.9576 112.707 10.9576H118.071L113.732 14.1103C113.068 14.5925 112.79 15.4473 113.044 16.2276L114.701 21.3287L110.362 18.176C109.698 17.6938 108.799 17.6938 108.136 18.176L103.796 21.3287L105.454 16.2276C105.707 15.4473 105.43 14.5925 104.766 14.1103L100.427 10.9576H105.79C106.611 10.9576 107.338 10.4294 107.591 9.6491Z" stroke="#FFA722" stroke-width="2" />
+											<path d="M34.2191 3.92789C34.4866 3.10449 35.6515 3.10449 35.9191 3.92789L37.6776 9.34008C37.7972 9.70832 38.1404 9.95763 38.5276 9.95763H44.2183C45.0841 9.95763 45.444 11.0655 44.7436 11.5744L40.1397 14.9193C39.8265 15.1469 39.6954 15.5503 39.8151 15.9185L41.5736 21.3307C41.8411 22.1541 40.8987 22.8388 40.1983 22.33L35.5944 18.985C35.2812 18.7575 34.857 18.7575 34.5438 18.985L29.9399 22.33C29.2394 22.8388 28.297 22.1541 28.5646 21.3307L30.3231 15.9185C30.4427 15.5503 30.3117 15.1469 29.9984 14.9193L25.3945 11.5744C24.6941 11.0655 25.0541 9.95763 25.9199 9.95763H31.6106C31.9978 9.95763 32.3409 9.70832 32.4606 9.34008L34.2191 3.92789Z" fill="#FFA722" />
+											<path d="M83.3744 3.92789C83.6419 3.10449 84.8068 3.10449 85.0743 3.92789L86.8329 9.34008C86.9525 9.70832 87.2957 9.95763 87.6828 9.95763H93.3736C94.2393 9.95763 94.5993 11.0655 93.8989 11.5744L89.295 14.9193C88.9818 15.1469 88.8507 15.5503 88.9703 15.9185L90.7289 21.3307C90.9964 22.1541 90.054 22.8388 89.3535 22.33L84.7497 18.985C84.4364 18.7575 84.0123 18.7575 83.699 18.985L79.0951 22.33C78.3947 22.8388 77.4523 22.1541 77.7198 21.3307L79.4784 15.9185C79.598 15.5503 79.4669 15.1469 79.1537 14.9193L74.5498 11.5744C73.8494 11.0655 74.2094 9.95763 75.0751 9.95763H80.7658C81.153 9.95763 81.4962 9.70832 81.6158 9.34008L83.3744 3.92789Z" fill="#FFA722" />
+											<mask id="mask0_1_3683" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="99" y="3" width="21" height="20">
+												<path d="M108.289 3.90599C108.588 2.98468 109.892 2.98468 110.191 3.90599L111.826 8.9398C111.96 9.35182 112.344 9.63078 112.778 9.63078H118.07C119.039 9.63078 119.442 10.8704 118.658 11.4398L114.376 14.5509C114.026 14.8055 113.879 15.2569 114.013 15.6689L115.648 20.7027C115.948 21.624 114.893 22.3901 114.11 21.8207L109.828 18.7097C109.477 18.455 109.003 18.455 108.652 18.7097L104.37 21.8207C103.586 22.3901 102.532 21.624 102.831 20.7027L104.467 15.6689C104.601 15.2569 104.454 14.8055 104.103 14.5509L99.8215 11.4398C99.0378 10.8704 99.4405 9.63078 100.409 9.63078H105.702C106.135 9.63078 106.519 9.35182 106.653 8.9398L108.289 3.90599Z" fill="#FFA722" />
+											</mask>
+											<g mask="url(#mask0_1_3683)">
+												<rect x="99.1738" y="1.47009" width="9.82044" height="22.587" rx="1" fill="#FFA722" />
+											</g>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="item-testimonials__text">
+								<p>
+									“ Leverage agile frameworks to provide a robust synopsis for high level overviews ”
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__achievements achievements">
+				<div class="achievements__container">
+					<div class="achievements__content">
+						<div class="achievements__header block-title">
+							<div class="achievements__label block-title__label block-title__label--white">How We Work</div>
+							<h2 class="achievements__title block-title__title block-title__title--white">To Get Your Business <br> To The Next Level</h2>
+							<div class="achievements__text block-title__text">
+								<p>
+									Leverage agile frameworks to provide synopsis for high level overviews.Iterative approaches to corporate strategy foster collaborative thinking to further the overal.
+								</p>
+							</div>
+						</div>
+						<div class="achievements__card card-achievements">
+							<div class="card-achievements__icon">
+								<img src="img/achievements/icon01.svg" alt="Image">
+							</div>
+							<div class="card-achievements__text">
+								<p>
+									We have <mark>50+</mark> years of experience. We offer
+									<mark>whitecollar</mark> services to you
+								</p>
+							</div>
+						</div>
+						<ul class="achievements__list list-achievements">
+							<li class="list-achievements__item">
+								<div class="list-achievements__title">Planning</div>
+								<div class="list-achievements__text">
+									<p>
+										Leverage agile frameworks to provide synopsis for high level overviews.
+									</p>
+								</div>
+							</li>
+							<li class="list-achievements__item">
+								<div class="list-achievements__title">Briefing</div>
+								<div class="list-achievements__text">
+									<p>
+										Leverage agile frameworks to provide synopsis for high level approaches
+									</p>
+								</div>
+							</li>
+							<li class="list-achievements__item">
+								<div class="list-achievements__title">Evaluation</div>
+								<div class="list-achievements__text">
+									<p>
+										Leverage agile frameworks to provide synopsis for high level overviews Iterative.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="achievements__body">
+						<div class="achievements__header block-title">
+							<div class="achievements__label block-title__label block-title__label--white">Book Now</div>
+							<h2 class="achievements__title block-title__title block-title__title--white">Get Free Business Appointment</h2>
+						</div>
+						<form class="achievements__form form-achievements" action="#" method="POST" id="form-achievements" enctype="multipart/form-data">
+							<div class="form-achievements__body">
+								<div class="form-achievements__item">
+									<input class="form-achievements__input" required autocomplete="off" type="text" name="name" placeholder="Your Name">
+								</div>
+								<div class="form-achievements__item">
+									<input class="form-achievements__input" required autocomplete="off" type="email" name="email" placeholder="Email Address">
+								</div>
+								<div class="form-achievements__item">
+									<input class="form-achievements__input" required autocomplete="off" type="tel" name="numder" placeholder="Phone Number">
+								</div>
+								<div class="form-achievements__item">
+									<div class="form-achievements__date">
+										<input class="form-achievements__input" required autocomplete="off" type="date" name="date" placeholder="Date">
+									</div>
+									<div class="form-achievements__time">
+										<input class="form-achievements__input" required autocomplete="off" type="text" name="time" placeholder="Time">
+									</div>
+								</div>
+								<div class="form-achievements__item form-achievements__item--textarea">
+									<textarea autocomplete="off" name="description" placeholder="Service Description" class="form-achievements__input form-achievements__input--textarea" spellcheck="false"></textarea>
+								</div>
+							</div>
+							<button form="form-achievements" type="submit" class="form-achievements__button button button--green">Submit</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<div class="page__team team">
+				<div class="team__container">
+					<a href="#" class="team__button">Our Expert Team</a>
+				</div>
+				<div class="team__image">
+					<img src="img/team/team_bg.jpg" alt="Image">
+				</div>
+			</div>
+			<section class="page__news news">
+				<div class="news__container">
+					<div class="news__header">
+						<div class="news__content block-title">
+							<div class="news__label block-title__label">Our Recent News</div>
+							<h2 class="news__title block-title__title">Latest Posts</h2>
+						</div>
+						<div class="news__actions">
+							<a href="#" class="news__button button">More Work</a>
+						</div>
+					</div>
+					<div class="news__items">
+						<article class="news__item item-news">
+							<div class="item-news__body">
+								<div class="item-news__image">
+									<img src="img/news/image01.jpg" alt="Image">
+								</div>
+								<div class="item-news__labels label-item">
+									<div class="label-item__date">April 13 / 2021</div>
+									<div class="label-item__name">Miranda Doe</div>
+									<div class="label-item__descr">Business</div>
+								</div>
+							</div>
+							<div class="item-news__content">
+								<h4 class="item-news__title">A Business Consulting That Can Produce</h4>
+								<div class="item-news__text">
+									<p>
+										Leverage agile frameworks to provide a robust synopsis for high level overviews.Iterative approaches to corporate strategy foster collaborative thinking.
+									</p>
+								</div>
+								<a href="#" class="item-news__link">Read More</a>
+							</div>
+						</article>
+						<article class="news__item item-news">
+							<div class="item-news__body">
+								<div class="item-news__image">
+									<img src="img/news/image02.jpg" alt="Image">
+								</div>
+								<div class="item-news__labels label-item">
+									<div class="label-item__date">April 13 / 2021</div>
+									<div class="label-item__name">Miranda Doe</div>
+									<div class="label-item__descr">Business</div>
+								</div>
+							</div>
+							<div class="item-news__content">
+								<h4 class="item-news__title">Team Identifiers, Benefits, and How to Build One that Works</h4>
+								<div class="item-news__text">
+									<p>
+										Leverage agile frameworks to provide a robust synopsis for high level overviews.Iterative approaches to corporate strategy foster collaborative thinking.
+									</p>
+								</div>
+								<a href="#" class="item-news__link">Read More</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__subscibe subscibe">
+				<div class="subscibe__container">
+					<div class="subscibe__body">
+						<div class="subscibe__header block-title">
+							<div class="subscibe__label block-title__label block-title__label--purple">Subscribe Whitecollar</div>
+							<h2 class="subscibe__title block-title__title">Need An Experienced <span>Whitecollar</span> job Service? Contact Us</h2>
+							<div class="subscibe__text block-title__text">
+								<p>
+									Leverage agile frameworks to provide a robust synopsis for high level overviews.Iterative approaches to corporate strategy foster collaborative thinkingfurther the overal.
+								</p>
+							</div>
+							<div class="subscibe__actions">
+								<a href="#" class="subscibe__button button">Get Started</a>
+							</div>
+
+						</div>
+						<img class="subscibe__image" src="img/subscibe/image.jpg" alt="Image">
+					</div>
+				</div>
+			</section>	
+		</main>
+		<footer class="footer">
+			<div class="footer__top top-footer">
+				<div class="top-footer__container">
+					<a href="#" class="top-footer__logo">
+						<img src="img/footer/footer_logo.svg" alt="Logo">
+					</a>
+					<div class="top-footer__items">
+						<a href="tel:01569896654" class="top-footer__item item-top">
+							<div class="item-top__icon">
+								<img src="img/footer/call.svg" alt="Icon">
+							</div>
+							<div class="item-top__body">
+								<div class="item-top__title">Call Us</div>
+								<div class="item-top__descr">+01 569 896 654</div>
+							</div>
+						</a>
+						<a href="mailto:info@example.com" class="top-footer__item item-top">
+							<div class="item-top__icon">
+								<img src="img/footer/mail.svg" alt="Icon">
+							</div>
+							<div class="item-top__body">
+								<div class="item-top__title">Mail Us</div>
+								<div class="item-top__descr">Info@Example.com</div>
+							</div>
+						</a>
+						<a href="https://www.google.com.ua/maps/@50.4873098,30.3269105,14z?hl=ru&entry=ttu" target="_blank" class="top-footer__item item-top">
+							<div class="item-top__icon">
+								<img src="img/footer/location.svg" alt="Icon">
+							</div>
+							<div class="item-top__body">
+								<div class="item-top__title">Location</div>
+								<div class="item-top__descr">Amsterdam, 109-74</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__menu menu-footer">
+				<div class="menu-footer__container">
+					<div class="menu-footer__columns">
+						<div class="menu-footer__column">
+							<h6 class="menu-footer__title">Quick Link</h6>
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Home</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">About Us</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Blog</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Services</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Contact</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu-footer__column">
+							<h6 class="menu-footer__title">Our Services</h6>
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Financial Consulting</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Business Management</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Consultant & Programs</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Company Management</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Insurance & Finance</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu-footer__column">
+							<h6 class="menu-footer__title">Uitility Page</h6>
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Style Guide</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Licenses</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Instructions</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Changelog</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">404 Page</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-footer__action action-menu">
+						<div class="action-menu__content">
+							<h6 class="action-menu__title">Subscribe</h6>
+							<div class="action-menu__text">
+								<p>Join Our Mailing List & to get our news.</p>
+							</div>
+						</div>
+						<form action="#" class="action-menu__form action-form" method="GET" id="action-form">
+							<div class="action-form__item">
+								<input class="action-form__input" required autocomplete="off" type="email" name="email" placeholder="your email address">
+							</div>
+							<button form="action-form" type="submit" class="action-form__button button">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copy copy-footer">
+				<div class="copy-footer__container">
+					<div class="copy-footer__text">
+						<p>
+							Copyright © <mark>WhiteCollar</mark> | Designed by <span>VictorFlow</span> Templates - Powered by Webflow
+						</p>
+					</div>
+					<div class="copy-footer__socials socials-footer">
+						<div class="socials-footer__text">Follow :</div>
+						<div class="socials-footer__links">
+							<a href="#" class="socials-footer__link">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+									<path d="M12.1048 2.18412C13.0482 2.18683 13.9521 2.54891 14.6192 3.19127C15.2862 3.83362 15.6622 4.70407 15.665 5.6125V12.4685C15.6622 13.377 15.2862 14.2474 14.6192 14.8898C13.9521 15.5321 13.0482 15.8942 12.1048 15.8969H4.98508C4.04172 15.8942 3.13779 15.5321 2.47073 14.8898C1.80366 14.2474 1.42766 13.377 1.42484 12.4685V5.6125C1.42766 4.70407 1.80366 3.83362 2.47073 3.19127C3.13779 2.54891 4.04172 2.18683 4.98508 2.18412H12.1048ZM12.1048 0.812988H4.98508C2.24377 0.812988 0.000976562 2.97271 0.000976562 5.6125V12.4685C0.000976562 15.1083 2.24377 17.268 4.98508 17.268H12.1048C14.8461 17.268 17.0889 15.1083 17.0889 12.4685V5.6125C17.0889 2.97271 14.8461 0.812988 12.1048 0.812988Z" fill="white" />
+									<path d="M13.1733 5.61255C12.962 5.61255 12.7556 5.55223 12.5799 5.43922C12.4043 5.32622 12.2674 5.16559 12.1866 4.97767C12.1057 4.78975 12.0846 4.58296 12.1258 4.38347C12.167 4.18397 12.2687 4.00072 12.4181 3.85689C12.5674 3.71306 12.7577 3.61511 12.9649 3.57543C13.1721 3.53574 13.3868 3.55611 13.582 3.63395C13.7771 3.71179 13.9439 3.84361 14.0613 4.01273C14.1786 4.18186 14.2413 4.3807 14.2413 4.5841C14.2416 4.71924 14.2142 4.85311 14.1606 4.97802C14.107 5.10292 14.0284 5.21641 13.9291 5.31197C13.8299 5.40753 13.712 5.48327 13.5823 5.53485C13.4526 5.58643 13.3136 5.61284 13.1733 5.61255ZM8.54542 6.29793C9.10873 6.29793 9.65938 6.45878 10.1277 6.76014C10.5961 7.06151 10.9612 7.48985 11.1767 7.991C11.3923 8.49215 11.4487 9.0436 11.3388 9.57562C11.2289 10.1076 10.9577 10.5963 10.5593 10.9799C10.161 11.3635 9.65354 11.6247 9.10106 11.7305C8.54858 11.8363 7.97592 11.782 7.45549 11.5744C6.93507 11.3668 6.49026 11.0153 6.1773 10.5643C5.86435 10.1133 5.69731 9.583 5.69731 9.04056C5.69811 8.31341 5.99844 7.61626 6.53239 7.10208C7.06634 6.58791 7.7903 6.29871 8.54542 6.29793ZM8.54542 4.9268C7.7005 4.9268 6.87456 5.16806 6.17204 5.62009C5.46951 6.07212 4.92196 6.7146 4.59862 7.46629C4.27529 8.21798 4.19069 9.04512 4.35552 9.84311C4.52036 10.6411 4.92723 11.3741 5.52467 11.9494C6.12212 12.5247 6.88332 12.9165 7.712 13.0753C8.54068 13.234 9.39963 13.1525 10.1802 12.8412C10.9608 12.5298 11.628 12.0025 12.0974 11.326C12.5669 10.6495 12.8174 9.85418 12.8174 9.04056C12.8174 7.94952 12.3673 6.90317 11.5662 6.13169C10.765 5.36021 9.67842 4.9268 8.54542 4.9268Z" fill="white" />
+								</svg>
+							</a>
+							<a href="#" class="socials-footer__link">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M17.1768 9.08983C17.1768 4.54632 13.3511 0.862305 8.63283 0.862305C3.91458 0.862305 0.0888672 4.54632 0.0888672 9.08983C0.0888672 13.1962 3.21275 16.6 7.29784 17.2178V11.4688H5.1279V9.08983H7.29784V7.2772C7.29784 5.21555 8.57371 4.07581 10.5251 4.07581C11.46 4.07581 12.4379 4.23669 12.4379 4.23669V6.26162H11.36C10.2993 6.26162 9.96745 6.89558 9.96745 7.54717V9.08983H12.3369L11.9585 11.4688H9.96783V17.2185C14.0529 16.6011 17.1768 13.1973 17.1768 9.08983Z" fill="white" />
+								</svg>
+							</a>
+							<a href="#" class="socials-footer__link">
+								<svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" fill="none">
+									<path d="M18.4853 2.4523C17.7985 2.75071 17.0718 2.94731 16.3283 3.03588C17.1097 2.57831 17.6973 1.85138 17.981 0.991431C17.2422 1.42343 16.4353 1.72654 15.5948 1.88778C15.2409 1.51686 14.8152 1.22178 14.3437 1.02047C13.8722 0.819173 13.3646 0.715856 12.852 0.716803C10.7762 0.716803 9.09643 2.3722 9.09643 4.41283C9.09496 4.69667 9.12748 4.97967 9.19331 5.25578C7.70486 5.18601 6.24737 4.8063 4.91407 4.14097C3.58078 3.47564 2.40104 2.53932 1.45034 1.39193C1.11681 1.9542 0.940425 2.59573 0.939612 3.24948C0.939612 4.53107 1.60825 5.66391 2.61789 6.32759C2.01971 6.3134 1.43379 6.15508 0.909861 5.86607V5.91184C0.909861 7.70455 2.20671 9.19592 3.92313 9.53539C3.60036 9.62144 3.26775 9.66503 2.93371 9.66508C2.69669 9.66549 2.4602 9.6425 2.22769 9.59642C2.70486 11.0649 4.09363 12.1329 5.73873 12.1634C4.40197 13.1936 2.76078 13.7504 1.07311 13.7463C0.773545 13.7459 0.474258 13.7281 0.176758 13.6929C1.89363 14.7893 3.88936 15.3691 5.92639 15.3636C12.8439 15.3636 16.6231 9.72992 16.6231 4.84384C16.6231 4.68364 16.6189 4.52344 16.6113 4.36706C17.3448 3.84529 17.9794 3.19688 18.4853 2.4523Z" fill="white" />
+								</svg>
+							</a>
+							<a href="#" class="socials-footer__link">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+									<path d="M9.16687 0.36084C4.37266 0.36084 0.485352 4.24641 0.485352 9.03849C0.485352 12.5909 2.62473 15.6436 5.68264 16.9878C5.65938 16.3835 5.67876 15.6552 5.83379 14.9966C6.00044 14.2916 6.94999 10.2665 6.94999 10.2665C6.94999 10.2665 6.67094 9.71255 6.67094 8.89515C6.67094 7.609 7.41507 6.64826 8.34523 6.64826C9.13587 6.64826 9.51568 7.24097 9.51568 7.94991C9.51568 8.74407 9.00797 9.9295 8.7483 11.0297C8.53126 11.9517 9.20951 12.6994 10.1203 12.6994C11.7636 12.6994 12.872 10.5881 12.872 8.0855C12.872 6.18339 11.5892 4.76165 9.25989 4.76165C6.6283 4.76165 4.98501 6.72574 4.98501 8.9184C4.98501 9.67381 5.2098 10.2084 5.55862 10.6191C5.71752 10.8089 5.74077 10.8864 5.68264 11.1033C5.64001 11.2621 5.54699 11.6457 5.50436 11.8006C5.44622 12.0214 5.26794 12.0989 5.07028 12.0176C3.85719 11.5217 3.29134 10.1968 3.29134 8.70145C3.29134 6.23762 5.37258 3.2818 9.49631 3.2818C12.81 3.2818 14.992 5.67977 14.992 8.25208C14.992 11.6573 13.0968 14.1986 10.3063 14.1986C9.36841 14.1986 8.48863 13.6911 8.18633 13.1178C8.18633 13.1178 7.68249 15.1167 7.57397 15.5041C7.39181 16.1743 7.03137 16.8406 6.70194 17.3636C7.50106 17.5992 8.32983 17.7193 9.163 17.72C13.9572 17.72 17.8445 13.8344 17.8445 9.04236C17.8445 4.25029 13.9611 0.36084 9.16687 0.36084Z" fill="white" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+	
+			</div>
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
