@@ -1,0 +1,55 @@
+@use "sass:math";
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1220;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Шрифти
+// @import "_fonts.scss";
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+// Обнулення
+@import "_reset.scss";
+// Компоненти
+@import "_functions.scss";
+// Медіазапити
+@import "_media.scss";
+// Змінні
+@import "_variables.scss";
+// Компоненти
+@import "_common.scss";
+
+//========================================================================================================================================================
+
+.wrapper main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: #{$containerWidth};
+	margin: 0 auto;
+	padding-left: toRem(15);
+	padding-right: toRem(15);
+}
+
+body {
+	font-family: "Inter";
+	font-size: toRem(18);
+	color: #7d7d7d;
+	background-color: #fff;
+	.menu-open & {
+		overflow: hidden;
+	}
+}
+
+//========================================================================================================================================================
+// --HEADER--
+//========================================================================================================================================================
+
