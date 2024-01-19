@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.button {
+  padding: 1.3125rem 1.25rem;
+  text-align: center;
+  min-width: 11.5rem;
+  color: #FFF;
+  font-weight: 600;
+  line-height: 122%;
+  text-transform: capitalize;
+  background-color: #6B77E5;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+@media (any-hover: hover) {
+  .button:hover {
+    background-color: #454d92;
+  }
+}
+@media (max-width: 61.99875em) {
+  .button {
+    padding: 0.9375rem 1.25rem;
+    min-width: 9.375rem;
+  }
+}
+.button--green {
+  background-color: #40DDB6;
+  color: #37393F;
+}
+@media (any-hover: hover) {
+  .button--green:hover {
+    background-color: #2c8d75;
+    color: #FFF;
+  }
+}
+
+.block-title__label {
+  color: #37393F;
+  font-weight: 500;
+  line-height: 147%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 0.4375rem;
+}
+@media (min-width: 93.75em) {
+  .block-title__label {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 47.99875em) and (max-width: 93.75em) {
+  @supports (font-size: clamp( 1rem , 0.8688594574rem  +  0.2732165788vw , 1.125rem )) {
+    .block-title__label {
+      font-size: clamp( 1rem , 0.8688594574rem  +  0.2732165788vw , 1.125rem );
+    }
+  }
+  @supports not (font-size: clamp( 1rem , 0.8688594574rem  +  0.2732165788vw , 1.125rem )) {
+    .block-title__label {
+      font-size: calc(1rem + 0.125 * (100vw - 47.99875rem) / 45.75125);
+    }
+  }
+}
+@media (max-width: 47.99875em) {
+  .block-title__label {
+    font-size: 1rem;
+  }
+}
+.block-title__label::before {
+  content: "";
+  width: 0.6875rem;
+  height: 0.6875rem;
+  background-color: #40DDB6;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.block-title__label--white {
+  color: #FFF;
+}
+.block-title__label--purple::before {
+  content: "";
+  width: 0.6875rem;
+  height: 0.6875rem;
+  background-color: #6B77E5;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.block-title__title {
+  color: #37393F;
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: capitalize;
+}
+@media (min-width: 93.75em) {
+  .block-title__title {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 61.99875em) and (max-width: 93.75em) {
+  @supports (font-size: clamp( 1.625rem , -0.0835597024rem  +  2.7557970159vw , 2.5rem )) {
+    .block-title__title {
+      font-size: clamp( 1.625rem , -0.0835597024rem  +  2.7557970159vw , 2.5rem );
+    }
+  }
+  @supports not (font-size: clamp( 1.625rem , -0.0835597024rem  +  2.7557970159vw , 2.5rem )) {
+    .block-title__title {
+      font-size: calc(1.625rem + 0.875 * (100vw - 61.99875rem) / 31.75125);
+    }
+  }
+}
+@media (max-width: 61.99875em) {
+  .block-title__title {
+    font-size: 1.625rem;
+  }
+}
+.block-title__title--white {
+  color: #FFF;
+}
+.block-title__text {
+  line-height: 147%;
+}
+@media (min-width: 93.75em) {
+  .block-title__text {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 61.99875em) and (max-width: 93.75em) {
+  @supports (font-size: clamp( 1rem , 0.7559200425rem  +  0.393685288vw , 1.125rem )) {
+    .block-title__text {
+      font-size: clamp( 1rem , 0.7559200425rem  +  0.393685288vw , 1.125rem );
+    }
+  }
+  @supports not (font-size: clamp( 1rem , 0.7559200425rem  +  0.393685288vw , 1.125rem )) {
+    .block-title__text {
+      font-size: calc(1rem + 0.125 * (100vw - 61.99875rem) / 31.75125);
+    }
+  }
+}
+@media (max-width: 61.99875em) {
+  .block-title__text {
+    font-size: 1rem;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+.wrapper main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+[class*=__container] {
+  max-width: 1250;
+  margin: 0 auto;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 1.125rem;
+  color: #7d7d7d;
+  background-color: #37393F;
+}
+.menu-open body {
+  overflow: hidden;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3.75rem;
+}
+
+.menu__icon {
+  display: none;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.875rem;
+}
+
+.header__logo {
+  font-size: 3.125rem;
+  color: #fff;
+}
+
+.menu__link {
+  font-size: 1.875rem;
+  color: #fff;
+}
+@media (any-hover: hover) {
+  .menu__link:hover {
+    text-decoration: underline;
+  }
+}
+
+.paragraph {
+  color: red;
+  font-size: 1.875rem;
+}
+
+.some__div {
+  color: greenyellow;
+  font-size: 1.875rem;
+}

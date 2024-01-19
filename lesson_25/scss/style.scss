@@ -1,0 +1,93 @@
+@use "sass:math";
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1220;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Шрифти
+// @import "_fonts.scss";
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+// Обнулення
+@import "_reset.scss";
+// Компоненти
+@import "_functions.scss";
+// Медіазапити
+@import "_media.scss";
+// Змінні
+@import "_variables.scss";
+// Компоненти
+@import "_common.scss";
+
+//========================================================================================================================================================
+
+.wrapper main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: #{$containerWidth};
+	margin: 0 auto;
+	padding-left: toRem(15);
+	padding-right: toRem(15);
+}
+
+body {
+	font-family: "Inter";
+	font-size: toRem(18);
+	color: #7d7d7d;
+	background-color: #37393F;
+	.menu-open & {
+		overflow: hidden;
+	}
+}
+
+//========================================================================================================================================================
+// --HEADER--
+//========================================================================================================================================================
+
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: toRem(60);
+}
+
+.menu__icon {
+	display: none;
+}
+.menu__list {
+	display: flex;
+	gap: toRem(30);
+}
+
+.header__logo {
+	font-size: toRem(50);
+	color: #fff;
+}
+
+.menu__link {
+	font-size: toRem(30);
+	color: #fff;
+	@media (any-hover: hover){
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+.paragraph {
+	color: red;
+	font-size: toRem(30);
+}
+.some__div {
+	color: greenyellow;
+	font-size: toRem(30);
+}
