@@ -1,0 +1,234 @@
+@use "sass:math";
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1220;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Шрифти
+// @import "_fonts.scss";
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+// Обнулення
+@import "_reset.scss";
+// Компоненти
+@import "_functions.scss";
+// Медіазапити
+@import "_media.scss";
+// Змінні
+@import "_variables.scss";
+// Компоненти
+@import "_common.scss";
+
+//========================================================================================================================================================
+
+.wrapper main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: #{$containerWidth};
+	margin: 0 auto;
+	padding-left: toRem(15);
+	padding-right: toRem(15);
+}
+
+body {
+	font-family: "Inter";
+	font-size: toRem(18);
+	color: #7d7d7d;
+	background-color: $titleColor;
+	.menu-open & {
+		overflow: hidden;
+	}
+	opacity: 0;
+	transition: opacity 1s;
+	&.loaded {
+		opacity: 1;
+	}
+}
+
+//========================================================================================================================================================
+// --HEADER--
+//========================================================================================================================================================
+
+.header {
+	// .header__container
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+		gap: toRem(20);
+	}
+	// .header__logo
+	&__logo {
+		font-size: toRem(30);
+		color: $whiteColor;
+	}
+	// .header__menu
+	&__menu {
+	}
+}
+
+.menu {
+	// .menu__icon
+	&__icon {
+		display: none;
+		@media (max-width: $mobile) {
+			display: block;
+			position: relative;
+			width: toRem(30);
+			height: toRem(18);
+			z-index: 5;
+			@media (any-hover: none) {
+				cursor: default;
+			}
+			span,
+			&::before,
+			&::after {
+				content: "";
+				transition: all 0.3s ease 0s;
+				right: 0;
+				position: absolute;
+				width: 100%;
+				height: toRem(2);
+				background-color: $whiteColor;
+			}
+			&::before {
+				top: 0;
+			}
+			&::after {
+				bottom: 0;
+			}
+			span {
+				top: calc(50% - toRem(1));
+			}
+			.menu-open & {
+				span {
+					width: 0;
+				}
+				&::before {
+					top: calc(50% - toRem(1));
+					transform: rotate(-45deg);
+				}
+				&::after {
+					bottom: calc(50% - toRem(1));
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
+	// .menu__body
+	&__body {
+		@media (max-width: $mobile) {
+			position: fixed;
+			z-index: 2;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			right: -100%;
+			overflow: auto;
+			background-color: #794f45;
+			padding: toRem(100) toRem(20);
+			transition: all 0.5s;
+			.menu-open & {
+				right: 0;
+			}
+		}
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		gap: toRem(30);
+	}
+	// .menu__item
+	&__item {
+		font-size: toRem(30);
+		color: $whiteColor;
+		// opacity: 0;
+		// visibility: hidden;
+		// transform: translate(-40%, 0);
+		// transition: all 0.4s;
+		opacity: 1;
+		visibility: visible;
+
+		&--anim-right {
+			// opacity: 0;
+			// visibility: hidden;
+			// transform: translate(40%, 0);
+			// transition: all 0.4s;
+		}
+		&.show {
+			// transition: all 1.5s; //! краще додавати на цей клас окремо transition, щоб об’єкт встигав повернутись на своє місце після події
+			// opacity: 1;
+			// visibility: visible;
+			// transform: translate(0, 0) skew(0);
+		}
+	}
+	// .menu__link
+	&__link {
+		// font-size: toRem(30);
+		// color: $whiteColor;
+	}
+}
+
+.page {
+	// position: relative;
+	// .page__container
+	&__container {
+	}
+}
+
+/* ------------------------------- */
+.up-button {
+	cursor: pointer;
+	position: fixed;
+	width: toRem(50);
+	height: toRem(50);
+	bottom: toRem(50);
+	right: toRem(50);
+	border-radius: 50%;
+	background: $greenColor url("../img/up.svg") center no-repeat;
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(0, 20%);
+	transition: all 0.5s;
+	&--active {
+		opacity: 0.7;
+		visibility: visible;
+		transform: translate(0, 0);
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+/* ------------------------------- */
+
+.block-2 {
+	// .block-2__item
+	&__text {
+	}
+	// .block-2__item
+	&__item {
+		font-size: toRem(40);
+		text-align: center;
+		background-color: $greenColor;
+		color: $titleColor;
+	}
+}
+
+.footer {
+	transition: all 0.7s;
+	font-size: toRem(30);
+	text-align: center;
+	background-color: #fff;
+}
